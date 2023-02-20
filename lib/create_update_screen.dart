@@ -36,7 +36,9 @@ class _CreateUpdateNoteScreenState extends State<CreateUpdateNoteScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Do some changes..."),
+        title: Text(widget.noteToEdit != null
+            ? "Do some changes..."
+            : "Something to keep.."),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
